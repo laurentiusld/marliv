@@ -629,8 +629,17 @@ h1, h2, h3, h4 {
         text-align: center;
     }
 
-    .facility-card {
-        border-right: none;
+    .carousel-container::before,
+    .carousel-container::after {
+        width: 30px;
+    }
+
+    .carousel-item {
+        width: 85vw;
+    }
+
+    .carousel-track img {
+        height: 250px;
     }
 }
 

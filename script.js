@@ -73,12 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     heroSection.classList.remove('animate-zoom');
-                    // Trigger reflow to restart animation
-                    void heroSection.offsetWidth;
-                    heroSection.classList.add('animate-zoom');
+                    requestAnimationFrame(() => {
+                        requestAnimationFrame(() => {
+                            heroSection.classList.add('animate-zoom');
+                        });
+                    });
                 }
             });
-        }, { threshold: 0.2 });
+        }, { threshold: 0.1 });
         heroObserver.observe(heroSection);
     }
 });
