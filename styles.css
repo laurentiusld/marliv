@@ -432,6 +432,7 @@ h1, h2, h3, h4 {
     align-items: center;
     gap: 20px;
     width: 500px;
+    scroll-snap-align: center;
     transition: transform 0.4s ease;
 }
 
@@ -651,32 +652,13 @@ h1, h2, h3, h4 {
         text-align: center;
     }
 
-    .carousel-container {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        padding-bottom: 10px;
-        -webkit-overflow-scrolling: touch;
-        -ms-overflow-style: none; 
-        scrollbar-width: none; 
-    }
-
-    .carousel-container::-webkit-scrollbar {
-        display: none; 
-    }
-
     .carousel-container::before,
     .carousel-container::after {
-        display: none; 
-    }
-    
-    .carousel-track {
-        animation: none;
-        padding: 0 5vw;
+        width: 30px;
     }
 
     .carousel-item {
         width: 85vw;
-        scroll-snap-align: center;
     }
 
     .carousel-track img {
