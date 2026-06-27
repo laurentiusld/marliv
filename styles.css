@@ -246,7 +246,7 @@ h1, h2, h3, h4 {
     left: -5%;
     width: 110%;
     height: 110%;
-    background: url('assets/image_3.jpeg') center/cover no-repeat;
+    background: url('assets/Piscină sărată Saună uscatăumedă.jpeg') center/cover no-repeat;
     z-index: 0;
     /* Mobile rendering fixes */
     -webkit-backface-visibility: hidden;
@@ -314,6 +314,88 @@ h1, h2, h3, h4 {
     margin-bottom: 40px;
     font-weight: 400;
     opacity: 0.9;
+}
+
+/* Booking CTA */
+.booking-cta {
+    background-color: var(--accent-gold);
+    color: var(--text-white);
+    padding: 40px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cta-item {
+    text-align: center;
+}
+
+.cta-item h3 {
+    color: var(--text-white);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cta-phone {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cta-phone a {
+    color: var(--text-white);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.cta-phone a:hover {
+    color: var(--text-gold-light);
+}
+
+.cta-cards {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.card-badge {
+    background-color: #fff;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-badge::before {
+    content: '💳';
+}
+
+.card-badge.edenred {
+    border-left: 4px solid #e2000f;
+}
+
+.card-badge.sodexo {
+    border-left: 4px solid #005697;
+}
+
+.card-badge.up {
+    border-left: 4px solid #f6891f;
 }
 
 /* About Section */
