@@ -869,3 +869,57 @@ h1, h2, h3, h4 {
 .lightbox-close:hover {
     color: var(--accent-gold);
 }
+
+/* Reviews Section */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.review-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.stars {
+    color: var(--accent-gold);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    font-style: italic;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.review-author {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
